@@ -1,0 +1,23 @@
+P {FONT-SIZE: 11px; MARGIN: 5px; COLOR: #444; LINE-HEIGHT: 15px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+P.staff {FONT-SIZE: 10px; MARGIN: 2px; COLOR: #444; LINE-HEIGHT: 13px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+H1 {FONT-WEIGHT: bold; FONT-SIZE: 22px; MARGIN: 8px 10px; COLOR: #444; LINE-HEIGHT: 26px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+H2 {FONT-WEIGHT: bold; FONT-SIZE: 20px; MARGIN: 8px 10px; COLOR: #444; LINE-HEIGHT: 24px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+H3 {FONT-WEIGHT: bold; FONT-SIZE: 18px; MARGIN: 8px 10px; COLOR: #444; LINE-HEIGHT: 22px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+H4 {FONT-WEIGHT: bold; FONT-SIZE: 15px; MARGIN: 8px 10px; COLOR: #444; LINE-HEIGHT: 20px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+H5 {FONT-WEIGHT: bold; FONT-SIZE: 12px; MARGIN: 8px 10px; COLOR: #444; LINE-HEIGHT: 18px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+H6 {FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN: 8px 10px; COLOR: #444; LINE-HEIGHT: 15px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+UL {PADDING-LEFT: 0px; FONT-SIZE: 12px; COLOR: #444; LINE-HEIGHT: 15px; PADDING-TOP: 0px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+OL {PADDING-LEFT: 0px; FONT-SIZE: 12px; COLOR: #444; LINE-HEIGHT: 15px; PADDING-TOP: 0px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+LI {PADDING-LEFT: 0px; FONT-SIZE: 12px; COLOR: #444; LINE-HEIGHT: 18px; PADDING-TOP: 0px; FONT-FAMILY: geneva, verdana, arial, "ms sans serif", sans-serif}
+INPUT {BORDER-RIGHT: #333 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #333 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #333 1px solid; COLOR: #444; PADDING-TOP: 0px; BORDER-BOTTOM: #333 1px solid; FONT-FAMILY: verdana, arial, sans-serif; BACKGROUND-COLOR: #fff}
+TEXTAREA {BORDER-RIGHT: #333 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #333 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #333 1px solid; COLOR: #444; PADDING-TOP: 0px; BORDER-BOTTOM: #333 1px solid; FONT-FAMILY: verdana, arial, sans-serif; BACKGROUND-COLOR: #fff}
+INPUT.button {BORDER-RIGHT: #999 2px outset; BORDER-TOP: #999 2px outset; BORDER-LEFT: #999 2px outset; BORDER-BOTTOM: #999 2px outset; BACKGROUND-COLOR: #ccc}
+INPUT.menu {BORDER-RIGHT: #333 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #333 0px solid; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #333 0px solid; COLOR: #ccc; PADDING-TOP: 0px; BORDER-BOTTOM: #333 0px solid; FONT-FAMILY: verdana, arial, sans-serif; BACKGROUND-COLOR: #444}
+A:link {FONT-WEIGHT: bold; COLOR: #369; TEXT-DECORATION: underline}
+A:visited {FONT-WEIGHT: bold; COLOR: #58b; TEXT-DECORATION: underline}
+A:active {FONT-WEIGHT: bold; COLOR: #69c; TEXT-DECORATION: underline}
+A:hover {FONT-WEIGHT: bold; COLOR: #f90; TEXT-DECORATION: underline}
+B {FONT-WEIGHT: bold}
+STRONG {FONT-WEIGHT: bold}
+I {}
+EM {}

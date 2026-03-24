@@ -1,0 +1,24 @@
+#!/usr/local/bin/perl
+print "Content-type:text/html\n\n";
+
+$fullpath="./";
+$IP = $ENV{'REMOTE_ADDR'};
+$ctime = time();
+#open a file count.txt to read the counter number
+open(CNT,"count.txt");
+
+#record the counter number
+$count=<CNT>;
+$count++;
+
+print "You are the $count visitors, from $ENV{'REMOTE_ADDR'}"<br>;
+print "Ip: $IP, Time : $ctime";
+close(CNT);
+
+#open another file
+open(OLD,">count.old");
+print OLD $count;
+close(OLD);
+
+cp count.old count.txt;
+exit;

@@ -1,0 +1,20 @@
+A:link {COLOR: #05539a; TEXT-DECORATION: none}
+A:active {COLOR: #05539a; TEXT-DECORATION: none}
+A:visited {COLOR: #05539a; TEXT-DECORATION: none}
+A:hover {COLOR: #c40022; TEXT-DECORATION: none}
+
+.articletitle {	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #000000; LINE-HEIGHT: 26px; FONT-FAMILY: trebuchet ms, arial, verdana, helvetica, sans-serif; TEXT-DECORATION: none}
+INPUT {	BORDER-RIGHT: #b6c7e5 1px solid; BORDER-TOP: #b6c7e5 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 12px; BORDER-LEFT: #b6c7e5 1px solid; COLOR: #000000; BORDER-BOTTOM: #b6c7e5 1px solid; FONT-FAMILY: verdana, arial, helvetica, sans-serif,宋体}
+TEXTAREA {BORDER-RIGHT: #b6c7e5 1px solid; BORDER-TOP: #b6c7e5 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 12px; BORDER-LEFT: #b6c7e5 1px solid; COLOR: #000000; BORDER-BOTTOM: #b6c7e5 1px solid; FONT-FAMILY: verdana, arial, helvetica, sans-serif,宋体}
+OPTION {BORDER-RIGHT: #b6c7e5 1px solid; BORDER-TOP: #b6c7e5 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 12px; BORDER-LEFT: #b6c7e5 1px solid; COLOR: #000000; BORDER-BOTTOM: #b6c7e5 1px solid; FONT-FAMILY: verdana, arial, helvetica, sans-serif,宋体}
+SELECT {FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: 宋体}
+BODY {FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: tahoma,宋体}
+TABLE {FONT-SIZE: 12px; OVERFLOW-X: hidden; empty-cells: show}
+TD {FONT-SIZE: 12px; MARGIN: 5px; COLOR: #000000; FONT-FAMILY: tahoma,宋体}
+
+.tableoutline {BORDER-RIGHT: #c4c4c4 1px solid; BORDER-TOP: #c4c4c4 1px solid; BORDER-LEFT: #c4c4c4 1px solid; BORDER-BOTTOM: #c4c4c4 1px solid}
+.reginput {BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #ffffff 1px solid; PADDING-TOP: 0px}
+.input {BORDER-RIGHT: #b6c7e5 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #b6c7e5 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #b6c7e5 1px solid; PADDING-TOP: 0px}
+.index {BORDER-RIGHT: #eef3fb 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #eef3fb 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #eef3fb 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #c5d7e5 1px solid; BACKGROUND-COLOR: #eef3fb}
+.iframe {BORDER-RIGHT: 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 1px; BORDER-LEFT: 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: 1px solid}
+P {MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px}

@@ -1,0 +1,66 @@
+BODY {	FONT-SIZE: 10pt; COLOR: #222230; FONT-FAMILY: verdana, arial, HELVETICA, Century Gothic, Times New Roman}
+TABLE {	FONT-SIZE: 10pt; COLOR: #222230}
+A {COLOR: #335599; TEXT-DECORATION: none}
+A:hover {TEXT-DECORATION: underline}
+HR {COLOR: #336699}
+H4 {PADDING-RIGHT: 10px; PADDING-LEFT: 15px; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(../layout/images/h4_bg.gif); PADDING-BOTTOM: 8px; COLOR: #227733; PADDING-TOP: 7px; BACKGROUND-REPEAT: repeat-y; FONT-FAMILY: Century Gothic, Arial, Helvetica, sans-serif}
+INPUT {	BORDER-RIGHT: #ccddee 1px solid; BORDER-TOP: #ccddee 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #ccddee 1px solid; BORDER-BOTTOM: #ccddee 1px solid; FONT-FAMILY: verdana, arial, HELVETICA, Century Gothic, Times New Roman; BACKGROUND-COLOR: transparent}
+SELECT {BORDER-RIGHT: #ccddee 1px solid; BORDER-TOP: #ccddee 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #ccddee 1px solid; BORDER-BOTTOM: #ccddee 1px solid; FONT-FAMILY: verdana, arial, HELVETICA, Century Gothic, Times New Roman; BACKGROUND-COLOR: transparent}
+TEXTAREA {BORDER-RIGHT: #ccddee 1px solid; BORDER-TOP: #ccddee 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #ccddee 1px solid; BORDER-BOTTOM: #ccddee 1px solid; FONT-FAMILY: verdana, arial, HELVETICA, Century Gothic, Times New Roman; BACKGROUND-COLOR: transparent}
+PRE {FONT-SIZE: 12px; FONT-FAMILY: verdana, arial, HELVETICA,Century Gothic, Times New Roman}
+TD.sidebar {BACKGROUND-IMAGE: url(../layout/images/Content_06.gif)}
+TD.title {PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 16pt; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: middle; COLOR: #ffffff; PADDING-TOP: 10px; FONT-FAMILY: Arial, Helvetica, Century Gothic, sans-serif, Verdana; TEXT-ALIGN: center}
+TD.content {PADDING-RIGHT: 10px; PADDING-LEFT: 40px; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: top; PADDING-TOP: 20px; HEIGHT: auto; TEXT-ALIGN: justify}
+TABLE.content {WIDTH: 100%; HEIGHT: 100%}
+.table_layout_1 {BORDER-RIGHT: #ccddee 1px solid; BORDER-TOP: #ccddee 1px solid; BORDER-LEFT: #ccddee 1px solid; WIDTH: 100%; BORDER-BOTTOM: #ccddee 1px solid; HEIGHT: 100%}
+.table_layout_1 TH {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; COLOR: #334455; PADDING-TOP: 5px; BACKGROUND-COLOR: #ccddee}
+.table_layout_1 TD {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #ddeeff}
+TABLE.news {}
+TABLE.news TD {BACKGROUND-COLOR: #dddddd}
+.news_date {WIDTH: 15%}
+TABLE.people {BORDER-RIGHT: #ccddee 1px solid; BORDER-TOP: #ccddee 1px solid; BORDER-LEFT: #ccddee 1px solid; WIDTH: 100%; BORDER-BOTTOM: #ccddee 1px solid; HEIGHT: 100%}
+TABLE.people TD {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #cceeff}
+.people_name {WIDTH: 40%}
+.people_chi {WIDTH: 15%; TEXT-ALIGN: center}
+.people_address {WIDTH: 13%}
+.people_phone {WIDTH: 7%}
+.people TD.people_remark {FONT-SIZE: 10px; BACKGROUND-COLOR: #ffffff}
+TABLE.seminar {BORDER-RIGHT: #ddffee 1px solid; BORDER-TOP: #ddffee 1px solid; BORDER-LEFT: #ddffee 1px solid; WIDTH: 100%; BORDER-BOTTOM: #ddffee 1px solid}
+.seminar TR {BORDER-RIGHT: #336699 3px solid; BORDER-TOP: #336699 3px solid; BORDER-LEFT: #336699 3px solid; BORDER-BOTTOM: #336699 3px solid}
+.seminar TH {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: #ddddee; PADDING-BOTTOM: 5px; WIDTH: 15%; PADDING-TOP: 5px}
+.seminar TD {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #ddffee}
+TD.seminar_title {FONT-WEIGHT: bold; BACKGROUND: #224466; COLOR: #ffffff; TEXT-ALIGN: center}
+TD.seminar_title A {COLOR: #ffffff}
+TABLE.shortcut {WIDTH: 70%}
+TABLE.shortcut TD {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #99aa99 1px dotted}
+TABLE.shortcut TD.shortcut_head {BACKGROUND-IMAGE: url(../images/shortcut_bar.gif); BACKGROUND-REPEAT: no-repeat; HEIGHT: 24px; BACKGROUND-COLOR: #ffffff}
+TABLE.footer TD {PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 10px; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: top; PADDING-TOP: 10px}
+TD.sitemap_item {PADDING-RIGHT: 12px; PADDING-LEFT: 12px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px dotted}
+TABLE.course-list {BORDER-RIGHT: #cdcfe4 1px solid; BORDER-TOP: #cdcfe4 1px solid; BORDER-LEFT: #cdcfe4 1px solid; WIDTH: 100%; BORDER-BOTTOM: #cdcfe4 1px solid}
+.course-list TH {BORDER-RIGHT: #eeeeff 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #eeeeff 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #eeeeff 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #eeeeff 1px solid; TEXT-ALIGN: left}
+.course-list TD {PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; BACKGROUND-COLOR: #ddeeee}
+.index_news TD {PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; COLOR: #3366cc; PADDING-TOP: 3px}
+.index_news A {COLOR: #ad100c}
+.index_news_dot {WIDTH: 5%; TEXT-ALIGN: right}
+.research {BORDER-RIGHT: #ccdddd 1px solid; BORDER-TOP: #ccdddd 1px solid; BORDER-LEFT: #ccdddd 1px solid; WIDTH: 100%; BORDER-BOTTOM: #ccdddd 1px solid}
+.research TD {PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; BACKGROUND-COLOR: #ccdddd}
+.research .left {PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; WIDTH: 15%; PADDING-TOP: 4px; BACKGROUND-COLOR: #ccddcc; TEXT-ALIGN: left}
+.research .research_title {BACKGROUND-COLOR: #cceeee}
+TD.about_item {	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px dotted}
+TABLE.fund_project {BACKGROUND-COLOR: #1d2d9e}
+TABLE.fund_project TD {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: justify}
+TABLE.fund_project TD.project_th {FONT-WEIGHT: bold; TEXT-ALIGN: center}
+TABLE.table_useful-link {WIDTH: 100%}
+TABLE.table_useful-link TD {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #ccddee 1px dotted}
+TABLE.list_news {BORDER-RIGHT: #ccddee 1px solid; BORDER-TOP: #ccddee 1px solid; BORDER-LEFT: #ccddee 1px solid; WIDTH: 100%; BORDER-BOTTOM: #ccddee 1px solid}
+TABLE.list_news TD {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px}
+TD.news-date {WIDTH: 12%; BACKGROUND-COLOR: #ccddee}
+TD.event-date {WIDTH: 16%; BACKGROUND-COLOR: #ccddee}
+TD.news-title {BORDER-BOTTOM: 1px dotted}
+TABLE.table_layout_2 {BACKGROUND-COLOR: #1d9e2d}
+TABLE.table_layout_2 TD {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: justify}
+TABLE.table_layout_2 TH {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: justify}
+TABLE.conference {BORDER-TOP: #aaddcc 1px double; WIDTH: 100%}
+TD.conf_image {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: middle; PADDING-TOP: 5px; TEXT-ALIGN: center}
+TD.conf_title {	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 16px; PADDING-BOTTOM: 5px; COLOR: #006633; PADDING-TOP: 5px; FONT-FAMILY: Arial, Helvetica, Century Gothic, Verdana, sans-serif}
+TD.conf_detail {PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px}

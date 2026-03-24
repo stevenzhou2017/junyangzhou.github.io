@@ -1,0 +1,18 @@
+A {font-family:Arial,Helvetica,sans-serif; font-size:10pt; color: #FFFFFF; text-decoration: none}
+A:active  {font-family:Arial,Helvetica,sans-serif; font-size:10pt; color: #FFFFFF; text-decoration: none;}
+A:visited {font-family:Arial,Helvetica,sans-serif; font-size:10pt; color:#FFFFFF; text-decoration: none;}
+A:hover {font-family:Arial,Helvetica,sans-serif; font-size:10pt; color: #CCCCCC; text-decoration: none;}
+A:link  {font-family:Arial,Helvetica,sans-serif; font-size:10pt; color: #FFFFFF; text-decoration: none; cursor: hand;}
+
+.title_1 {font-family:Arial,Helvetica,sans-serif; font-size:12pt; font-weight:bold; color:#000000}
+.title_2 {font-family:Arial,Helvetica,sans-serif; font-size:10pt; font-weight:bold; color:#000000}
+.menubar {font-family:Arial,Helvetica,sans-serif; font-size:10pt; font-weight:bold; color:#FFFFFF}
+
+.content{font-family:Arial,Helvetica,sans-serif; font-size:13pt; font-weight:normal; color:#0000CC}
+.content_1 {font-family:Arial,Helvetica,sans-serif; font-size:10pt; font-weight:bold; color:#000000}
+.content_2 {font-family:Arial,Helvetica,sans-serif; font-size:10pt; font-weight:normal; color:#000000}
+.content_3 {font-family:Arial,Helvetica,sans-serif; font-size:10pt; font-style:italic; font-weight:normal; color:#000000}
+.content_4 {font-family:Arial,Helvetica,sans-serif; font-size:8pt; font-weight:normal; color:#000000}
+.important_1 {font-family:Arial,Helvetica,sans-serif; font-size:10pt; font-weight:bold; color:#CC0000}
+.important_2 {font-family:Arial,Helvetica,sans-serif; font-size:10pt; font-weight:normal; color:#CC0000}
+.url_1 {font-family:Arial,Helvetica,sans-serif; font-size:10pt; font-weight:normal; color:#0000CC}
