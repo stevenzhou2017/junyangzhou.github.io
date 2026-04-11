@@ -1,3 +1,5 @@
+# LLM的Prompt工程
+
 LLM（大语言模型，Large Language Models）的**Prompt工程（Prompt Engineering）**，是指通过精心设计输入提示（Prompt）来引导模型生成更准确、可靠、符合预期的输出的技术。它本质上是“与模型对话的艺术与科学”，无需修改模型参数（权重），就能显著提升性能，尤其在复杂推理、结构化输出等任务上。
 
 ### 1. Prompt工程的底层机制：为什么Prompt能“控制”LLM？
