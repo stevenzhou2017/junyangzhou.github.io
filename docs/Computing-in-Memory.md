@@ -9,7 +9,7 @@
 - **功耗墙（Power Wall）**：数据搬运功耗远高于实际计算（据NVIDIA数据，在22nm工艺下，数据传输功耗可达计算的200倍）。
 
 **冯·诺依曼架构示意图**（经典分离式）：
-![冯·诺依曼架构](https://en.wikipedia.org/wiki/Von_Neumann_architecture#/media/File:Von_Neumann_Architecture.svg)
+![冯·诺依曼架构](../images/Von-Neumann-800x450.png "Von Neumann Architecture")
 
 ### 2. 存算一体技术的核心原理
 存算一体将“存”和“算”界限模糊甚至消除，在存储阵列中直接嵌入计算电路（或利用存储器件本身的物理特性）完成运算。主要针对AI神经网络的核心操作——**矩阵-向量乘法（VMM）和乘累加（MAC）**。
@@ -18,10 +18,7 @@
 - **数字存算一体**：在存储单元内或周边添加数字逻辑电路（如加法树、移位器），以二进制方式精确运算。精度高、鲁棒性强，但面积和功耗相对较高。
 
 **典型存算一体架构示意图**（以SRAM-CIM宏单元为例，可见子阵列并行计算）：
-<!---
 ![SRAM-CIM宏单元](https://pic1.zhimg.com/v2-735ac886ec573b505c81a5573fb1e528_1440w.jpg)
---->
-![SRAM-CIM宏单元](../images/Von-Neumann-800x450.png "Von Neumann Architecture")
 
 此外，还有**近存计算（Near-Memory Computing）**作为过渡：通过3D堆叠/HBM等技术缩短存算距离，但仍未完全融合。真正的存算一体是“存内计算”。
 
