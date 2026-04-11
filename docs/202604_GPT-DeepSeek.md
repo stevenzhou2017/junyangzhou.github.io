@@ -1,3 +1,5 @@
+# GPT与DeepSeek的演进
+
 **GPT（OpenAI的ChatGPT系列）与DeepSeek的主要区别**在于开发背景、架构理念、定位、成本和特定能力上。两者都是基于Transformer的大语言模型（LLM），但演进路径和侧重点差异明显。
 
 ### 核心区别对比
