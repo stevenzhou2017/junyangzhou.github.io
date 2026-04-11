@@ -57,7 +57,7 @@
 总体而言，存算一体技术正从实验室走向商用，是解决AI算力“存储墙+功耗墙”的关键路径之一。
 
 
-### 6. Appendix，**SRAM、DRAM、RRAM/ReRAM、MRAM、 NOR Flash、PCM、FeFET** 的完整对比总结（基于最新发展情况，截至2026年）。
+### 7. Appendix，**SRAM、DRAM、RRAM/ReRAM、MRAM、 NOR Flash、PCM、FeFET** 的完整对比总结（基于最新发展情况，截至2026年）。
 
 #### 1. 全称（缩写展开）
 - **SRAM**：Static Random Access Memory（静态随机存取存储器）
