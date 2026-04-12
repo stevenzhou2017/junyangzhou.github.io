@@ -1,11 +1,10 @@
-# **Prompt Engineering、Context Engineering 和 Harness Engineering 的关联及演进逻辑**
+# **Prompt Engineering，Context Engineering和Harness Engineering 的关联及演进逻辑**
 
 Author： 周均扬
 
 ---
 
-
-这三个概念是 AI（尤其是大语言模型 LLM 和 Agent）工程化能力的**三次范式跃迁**，并非相互替代，而是**层层嵌套、相互支撑的同一套系统的不同抽象层次**。它们共同描述了“我们如何让 AI 可靠地完成任务”这个核心问题在不同复杂度下的解决方案。
+这三个概念是 AI（尤其是大语言模型 LLM 和 Agent）工程化能力的**三次范式跃迁**，是**层层嵌套、相互支撑的同一套系统的不同抽象层次**。它们共同描述了“我们如何让 AI 可靠地完成任务”这个核心问题在不同复杂度下的解决方案。
 
 ### 1. 三个概念的核心定义与区别
 
@@ -25,7 +24,7 @@ Harness Engineering 把 Context Engineering 作为子集（它负责“什么时
 
 ### 2. 演进逻辑：为什么会从 Prompt → Context → Harness 自然演化？
 
-AI 工程的演进本质上是由**任务复杂度**和**可靠性需求**驱动的：
+AI工程的演进本质上是由**任务复杂度**和**可靠性需求**驱动的：
 
 1. **Prompt Engineering 时代（2022–2024）**  
    那时主流是单次对话/简单任务。模型能力有限，大家发现“一句好 prompt 就能出奇迹”。核心假设：**只要 prompt 完美，模型就能一次搞定**。  
