@@ -11,7 +11,7 @@ Transformer结构的演进始于2017年Google团队发表的经典论文《Atten
 - **Encoder**（编码器）：由6个相同层堆叠而成，每层包含**Multi-Head Self-Attention**（多头自注意力）和**Feed-Forward Network**（前馈神经网络），并使用残差连接（Residual Connection）和Layer Normalization。
 - **Decoder**（解码器）：类似Encoder，但额外加入**Masked Multi-Head Self-Attention**（掩码自注意力，防止看到未来token）和**Encoder-Decoder Attention**（交叉注意力，从Encoder获取信息）。
 - 关键创新：
-  - **Scaled Dot-Product Attention**：计算公式为 `Attention(Q, K, V) = softmax(QK^T / √d_k) V`，支持全局依赖建模。
+  - **Scaled Dot-Product Attention**：计算公式为 $$Attention(Q, K, V) = softmax(QK^T / √d_k) V$$，支持全局依赖建模。
   - **位置编码（Positional Encoding）**：使用正弦/余弦函数添加位置信息（因为注意力机制本身无序）。
   - **多头注意力**：并行捕捉不同子空间的特征。
 
