@@ -2,6 +2,8 @@
 
 Author：周均扬
 
+date: 2026.04.18
+
 ---
 
 **LLM中贝叶斯定理**主要指**贝叶斯定理（Bayes' theorem）**及其相关方法在大型语言模型（Large Language Models, LLMs）中的理论解释、应用和改进方式。它连接了概率推理、下一词预测（next-token prediction）、上下文学习（in-context learning, ICL）、不确定性量化、推理优化等核心概念。
