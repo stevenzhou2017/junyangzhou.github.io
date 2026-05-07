@@ -11,9 +11,9 @@ date： 2026.05.07
 ### 1. 原理（Principles）
 扩散模型模拟一个“破坏-重建”的双过程：数据在高维空间逐渐“扩散”成噪声，然后模型学习逆过程，把噪声“收敛回”真实数据。
 
-- **前向扩散过程（Forward Process）**：从真实数据 \( x_0 \) 开始，逐步添加高斯噪声，经过 \( T \) 步后变为近似标准正态分布的纯噪声 \( x_T \sim \mathcal{N}(0, I) \)。这是一个固定的、马尔可夫链过程，不需要学习参数。它将复杂的数据分布逐步“扩散”成简单的高斯噪声，便于采样起点。
+- **前向扩散过程（Forward Process）**：从真实数据 $$x_0$$ 开始，逐步添加高斯噪声，经过 $$T$$ 步后变为近似标准正态分布的纯噪声 $$x_T \sim \mathcal{N}(0, I)$$。这是一个固定的、马尔可夫链过程，不需要学习参数。它将复杂的数据分布逐步“扩散”成简单的高斯噪声，便于采样起点。
 
-- **逆向过程（Reverse Process）**：从噪声 \( x_T \) 开始，逐步去除噪声，恢复数据分布。模型学习预测每一步的噪声（或均值），从而生成高质量样本。这是一个学习的马尔可夫链，核心是训练神经网络（如 U-Net）来估计去噪方向。
+- **逆向过程（Reverse Process）**：从噪声 $$x_T$$ 开始，逐步去除噪声，恢复数据分布。模型学习预测每一步的噪声（或均值），从而生成高质量样本。这是一个学习的马尔可夫链，核心是训练神经网络（如 U-Net）来估计去噪方向。
 
 **直观类比**：想象把一滴墨水滴入水中（前向扩散，墨水扩散成均匀混合），模型学习如何把均匀混合的水“逆转”回原来的墨滴（逆向）。实际中，前向是固定的破坏，逆向是学习的生成。
 
@@ -29,42 +29,32 @@ date： 2026.05.07
 
 #### 前向过程
 定义马尔可夫链：
-\[
-q(x_t \mid x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I)
-\]
-其中 \( \beta_t \) 是方差调度（variance schedule，通常线性或余弦，从小到大）。
+$$q(x_t \mid x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I)$$
+其中 $$\beta_t$$ 是方差调度（variance schedule，通常线性或余弦，从小到大）。
 
-闭形式（从 \( x_0 \) 直接到 \( x_t \)）：
-\[
-x_t = \sqrt{\bar{\alpha}_t} x_0 + \sqrt{1 - \bar{\alpha}_t} \epsilon, \quad \epsilon \sim \mathcal{N}(0, I)
-\]
-其中 \( \alpha_t = 1 - \beta_t \)，\( \bar{\alpha}_t = \prod_{s=1}^t \alpha_s \)。当 \( T \) 足够大时，\( \bar{\alpha}_T \approx 0 \)，\( x_T \approx \mathcal{N}(0, I) \)。
+闭形式（从 $$x_0$$ 直接到 $$x_t$$）：
+$$x_t = \sqrt{\bar{\alpha}_t} x_0 + \sqrt{1 - \bar{\alpha}_t} \epsilon, \quad \epsilon \sim \mathcal{N}(0, I)$$
+其中 $$\alpha_t = 1 - \beta_t$$，$$\bar{\alpha}_t = \prod_{s=1}^t \alpha_s$$。当 $$T$$ 足够大时，$$\bar{\alpha}_T \approx 0$$，$$x_T \approx \mathcal{N}(0, I)$$。
 
 #### 逆向过程
 理想逆向后验：
-\[
-q(x_{t-1} \mid x_t, x_0) = \mathcal{N}(x_{t-1}; \tilde{\mu}_t(x_t, x_0), \tilde{\beta}_t I)
-\]
+$$q(x_{t-1} \mid x_t, x_0) = \mathcal{N}(x_{t-1}; \tilde{\mu}_t(x_t, x_0), \tilde{\beta}_t I)$$
 其中
-\[
-\tilde{\mu}_t = \frac{\sqrt{\bar{\alpha}_{t-1}} \beta_t}{1 - \bar{\alpha}_t} x_0 + \frac{\sqrt{\alpha_t} (1 - \bar{\alpha}_{t-1})}{1 - \bar{\alpha}_t} x_t, \quad \tilde{\beta}_t = \frac{1 - \bar{\alpha}_{t-1}}{1 - \bar{\alpha}_t} \beta_t
-\]
+$$\tilde{\mu}_t = \frac{\sqrt{\bar{\alpha}_{t-1}} \beta_t}{1 - \bar{\alpha}_t} x_0 + \frac{\sqrt{\alpha_t} (1 - \bar{\alpha}_{t-1})}{1 - \bar{\alpha}_t} x_t$$, 
+$$\quad \tilde{\beta}_t = \frac{1 - \bar{\alpha}_{t-1}}{1 - \bar{\alpha}_t} \beta_t$$
 
-模型参数化 \( p_\theta(x_{t-1} \mid x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\theta(x_t, t)) \)。为简化，通常固定方差，只学习均值。
+模型参数化 $$p_\theta(x_{t-1} \mid x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\theta(x_t, t))$$。为简化，通常固定方差，只学习均值。
 
-**重参数化技巧**：不直接预测 \( \mu_\theta \) 或 \( x_0 \)，而是让神经网络 \( \epsilon_\theta(x_t, t) \) 预测添加的噪声 \( \epsilon \)。则：
-\[
-\mu_\theta(x_t, t) = \frac{1}{\sqrt{\alpha_t}} \left( x_t - \frac{\beta_t}{\sqrt{1 - \bar{\alpha}_t}} \epsilon_\theta(x_t, t) \right)
-\]
+**重参数化技巧**：不直接预测 $$\mu_\theta$$ 或 $$x_0$$，而是让神经网络 $$\epsilon_\theta(x_t, t)$$ 预测添加的噪声 $$\epsilon$$。则：
+$$\mu_\theta(x_t, t) = \frac{1}{\sqrt{\alpha_t}} \left( x_t - \frac{\beta_t}{\sqrt{1 - \bar{\alpha}_t}} \epsilon_\theta(x_t, t) \right)$$
 
 #### 训练目标
 将模型视为 VAE，用变分下界（ELBO）训练。ELBO 简化为噪声预测损失（denoising score matching）：
-\[
-L(\theta) \approx \mathbb{E}_{t, x_0, \epsilon} \left[ \|\epsilon - \epsilon_\theta(\sqrt{\bar{\alpha}_t} x_0 + \sqrt{1 - \bar{\alpha}_t} \epsilon, t)\|^2 \right]
-\]
-随机采样 \( t \) 和 \( \epsilon \)，最小化这个 MSE 即可。
+$$L(\theta) \approx \mathbb{E}_{t, x_0, \epsilon} \left[ \|\epsilon - \epsilon_\theta(\sqrt{\bar{\alpha}_t} x_0 + \sqrt{1 - \bar{\alpha}_t} \epsilon, t)\|^2 \right]$$
 
-采样时：从 \( x_T \sim \mathcal{N}(0,I) \) 开始，迭代使用 \( p_\theta \) 去噪（可加随机性或用 DDIM 确定性采样）。
+随机采样 $$t$$ 和 $$\epsilon$$，最小化这个 MSE 即可。
+
+采样时：从 $$x_T \sim \mathcal{N}(0,I)$$ 开始，迭代使用 $$p_\theta$$ 去噪（可加随机性或用 DDIM 确定性采样）。
 
 **连续极限**：前向对应 SDE（如 Ornstein-Uhlenbeck），逆向是概率流 ODE 或 reverse-time SDE，允许更快的采样（如 Flow Matching）。
 
