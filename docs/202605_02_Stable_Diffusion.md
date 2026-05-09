@@ -1,4 +1,4 @@
-# Stable Diffusion(SD)
+# Stable Diffusion(SD，稳定扩散)
 author: 周均扬
 date: 2026.05.09
 
