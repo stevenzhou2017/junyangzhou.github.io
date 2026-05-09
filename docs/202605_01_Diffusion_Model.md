@@ -8,6 +8,8 @@ date： 2026.05.07
 **扩散模型（Diffusion Model）** 是近年来生成式 AI 领域最成功的范式之一，尤其在图像、视频、音频和 3D 生成中超越了 GANs 等早期方法。其核心思想源于非平衡热力学：通过逐步向数据添加噪声（前向扩散），然后训练模型学习逆转这一过程（逆向去噪）来生成新样本。
 
 
+---
+
 ### 1. 原理（Principles）
 扩散模型模拟一个“破坏-重建”的双过程：数据在高维空间逐渐“扩散”成噪声，然后模型学习逆过程，把噪声“收敛回”真实数据。
 
@@ -23,6 +25,8 @@ date： 2026.05.07
 - **连续视角**：用随机微分方程（SDE）或常微分方程（ODE）描述流动。
 
 这些视角共享一个核心：用时间依赖的速度场将简单先验（噪声）运输到数据分布。
+
+---
 
 ### 2. 数学推导（Mathematical Derivation）
 以经典的 **Denoising Diffusion Probabilistic Models (DDPM)** 为例（Ho et al., 2020）。
@@ -58,6 +62,8 @@ $$L(\theta) \approx \mathbb{E}_{t, x_0, \epsilon} \left[ \|\epsilon - \epsilon_\
 
 **连续极限**：前向对应 SDE（如 Ornstein-Uhlenbeck），逆向是概率流 ODE 或 reverse-time SDE，允许更快的采样（如 Flow Matching）。
 
+---
+
 ### 3. 关键技术（Key Technologies）
 - **Latent Diffusion Models (LDM / Stable Diffusion)**：在 VAE 的低维潜空间（latent space）而非像素空间进行扩散，大幅降低计算量（图像压缩 ~48 倍），使消费级 GPU 可运行。
 
@@ -73,6 +79,8 @@ $$L(\theta) \approx \mathbb{E}_{t, x_0, \epsilon} \left[ \|\epsilon - \epsilon_\
 
 - **训练技巧**：噪声调度优化、v-prediction、rectified flow 等提升稳定性与质量。
 
+---
+
 ### 4. 工业应用（Industrial Applications）
 扩散模型已从研究走向大规模工业部署，尤其在内容生成和设计领域。
 
@@ -87,3 +95,5 @@ $$L(\theta) \approx \mathbb{E}_{t, x_0, \epsilon} \left[ \|\epsilon - \epsilon_\
 **挑战与趋势**：计算效率（仍较高）、版权/安全问题、可控性、与世界模拟器结合（通用 AI）。效率优化、多模态和行业特定解决方案是重点，市场规模持续高速增长。
 
 扩散模型的核心优势在于**高质量、多样性与可扩展性**，结合持续的架构和采样创新，已成为生成 AI 的主力范式。
+
+![Diffusion Model流程与数学关系图](../images/Diffusion_Model.png "Diffusion Model")
