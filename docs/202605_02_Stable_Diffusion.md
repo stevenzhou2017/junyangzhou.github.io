@@ -125,7 +125,7 @@ $$x_0 \xrightarrow{\text{VAE encoder}} z_0 \xrightarrow{\text{forward diffusion}
 
 关键训练目标：$\min_\theta \mathbb{E}*{z_t, t, c} || \epsilon - \epsilon*\theta(z_t, t, c) ||^2$
 
-Stable Diffusion
+
 ![Stable_Diffusion流程与数学关系图](../images/Stable_Diffusion.png "Stable Diffusion")
 
 ---
@@ -151,7 +151,6 @@ Stable Diffusion
 5. **社区生态丰富**：大量开源模型（SD1.5/SD2.1/SDXL）、可扩展插件和工具。
 
 
-Diffusion Model(DM) VS Stable Diffusion(SD)
 ![Diffusion Model VS Stable Diffusion](../images/Diffusion_Model_vs_Stable_Diffusion.png "Diffusion Model vs Stable Diffusion")
 
 ---
