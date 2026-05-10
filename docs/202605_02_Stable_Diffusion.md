@@ -123,7 +123,7 @@ $$\epsilon_\theta(x_t, t, c)$$
 
 $$x_0 \xrightarrow{\text{VAE encoder}} z_0 \xrightarrow{\text{forward diffusion}} z_T \xrightarrow{\text{conditional reverse}} z_0 \xrightarrow{\text{VAE decoder}} x_0$$
 
-关键训练目标：$\min_\theta \mathbb{E}*{z_t, t, c} || \epsilon - \epsilon*\theta(z_t, t, c) ||^2$
+关键训练目标：$\min_\theta \mathbb{E}*{z_t, t, c} | \epsilon - \epsilon*\theta(z_t, t, c) |^2$
 
 
 ![Stable_Diffusion流程与数学关系图](../images/Stable_Diffusion.png "Stable Diffusion")
