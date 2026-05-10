@@ -96,4 +96,4 @@ $$L(\theta) \approx \mathbb{E}_{t, x_0, \epsilon} \left[ \|\epsilon - \epsilon_\
 
 扩散模型的核心优势在于**高质量、多样性与可扩展性**，结合持续的架构和采样创新，已成为生成 AI 的主力范式。
 
-![Diffusion Model流程与数学关系图](../images/Diffusion_Model.png "Diffusion Model")
+![Diffusion Model流程与数学关系图](../../../images/Diffusion_Model.png "Diffusion Model")
