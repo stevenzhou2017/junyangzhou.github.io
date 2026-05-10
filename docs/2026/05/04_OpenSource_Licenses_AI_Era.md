@@ -125,5 +125,5 @@ AI 时代的开源许可 **不再只是代码分发问题**，而是涵盖 **模
 
 ---
 
- **“传统开源许可 → AI开源许可演进与调整”**。
+ **传统开源许可 → AI开源许可演进与调整**
 ![Open Source Licenses in AI Era](OpenSource_Licenses_in_AI_Era.png "Open Source Licenses in AI Era")
