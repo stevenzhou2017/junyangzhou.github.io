@@ -1,4 +1,4 @@
-#AI时代的开源许可(Open Source Licenses in the AI Era)
+# AI时代的开源许可(Open Source Licenses in the AI Era)
 
 author: 周均扬
 
