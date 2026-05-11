@@ -199,6 +199,6 @@ AI时代对图形化编程提出了新的技术调整需求：
 ---
 
 **AI时代图形化编程发展趋势与机遇图**，用图形化方式展示从传统VP → AI智能VP的演进路线及应用场景。
-
+![Visual Programming in the AI Era](Visual_Programming_AI_Era.png "Visual Programming in the AI Era")
 
 
