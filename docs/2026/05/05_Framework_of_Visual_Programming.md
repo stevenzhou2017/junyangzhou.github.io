@@ -1,4 +1,4 @@
-# 图形化编程（Visual Programming）
+# AI时代的图形化编程(Visual Programming in the AI Era)
 
 author: 周均扬
 
