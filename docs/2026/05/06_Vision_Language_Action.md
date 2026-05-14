@@ -190,7 +190,7 @@ Action Tokens
 
 ---
 
-# 四、VLA 的技术架构
+## 4. VLA 的技术架构
 
 典型 VLA 系统：
 
