@@ -142,6 +142,6 @@ date： 2026.05.15
 ---
 
 **特斯拉光子计数感知计数图**
-![Tesla's "Photon Counting" Perception](https://chatgpt.com/s/m_6a0663e7da548191b96832c1b74cfa95 "Tesla's Photon Counting Perception")
+![Tesla's "Photon Counting" Perception](Tesla_Photon_Counting_Perception.png "Tesla's Photon Counting Perception")
 
 
