@@ -88,3 +88,4 @@ AI Skill化就是把AI变得像专业员工一样：
 ---
 
 **可视化说明**，把“AI大脑 → Skill → 执行 → 资产化”的流程直观呈现。
+![AI Skillization](AI_Skillization.png "AI Skillization")
