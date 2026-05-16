@@ -130,6 +130,7 @@ date： 2026.05.16
 * **部分自定义许可模型需额外审查条款**，不能简单地认为“公开权重 = 完全开源”。([7])
 
 参考资料： 
+
 [1]: https://inferencehub.org/blog/chinese-frontier-open-source-ai-models-2026/?utm_source=chatgpt.com "Chinese Frontier Open-Source AI Models in 2026: The Labs, the Models, and How They Stack Up | Inference Hub"
 
 [2]: https://llmguides.ai/models/open-source-llms/?utm_source=chatgpt.com "Open-Source LLMs Explained - LLM Guides"
