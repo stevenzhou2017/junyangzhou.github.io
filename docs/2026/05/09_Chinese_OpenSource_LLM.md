@@ -129,18 +129,20 @@ date： 2026.05.16
 * **Qwen 和 GLM 系列** 多使用 Apache 2.0，风险相对低，适合产品集成。
 * **部分自定义许可模型需额外审查条款**，不能简单地认为“公开权重 = 完全开源”。([7])
 
-参考资料： 
 
-[1]: https://inferencehub.org/blog/chinese-frontier-open-source-ai-models-2026/?utm_source=chatgpt.com "Chinese Frontier Open-Source AI Models in 2026: The Labs, the Models, and How They Stack Up | Inference Hub"
+### 参考资料： 
 
-[2]: https://llmguides.ai/models/open-source-llms/?utm_source=chatgpt.com "Open-Source LLMs Explained - LLM Guides"
+[1]:  "Chinese Frontier Open-Source AI Models in 2026: The Labs, the Models, and How They Stack Up | Inference Hub", https://inferencehub.org/blog/chinese-frontier-open-source-ai-models-2026/?utm_source=chatgpt.com
 
-[3]: https://www.index.dev/blog/chinese-open-source-llms?utm_source=chatgpt.com "Top 5 Chinese Open-Source LLMs to Watch in 2025"
+[2]: "Open-Source LLMs Explained - LLM Guides", https://llmguides.ai/models/open-source-llms/?utm_source=chatgpt.com 
 
-[4]: https://quant67.com/post/opensource/24-model-license/model-license.html?utm_source=chatgpt.com "【开源许可与版权工程】模型许可证深度解析：OpenRAIL-M、LLaMA"
+[3]: "Top 5 Chinese Open-Source LLMs to Watch in 2025", https://www.index.dev/blog/chinese-open-source-llms?utm_source=chatgpt.com 
 
-[5]: https://help.arena.ai/articles/4171906875-model_licenses?utm_source=chatgpt.com "Model Licenses - Arena Help Center"
+[4]: "【开源许可与版权工程】模型许可证深度解析：OpenRAIL-M、LLaMA", https://quant67.com/post/opensource/24-model-license/model-license.html?utm_source=chatgpt.com 
 
-[6]: https://intuitionlabs.ai/articles/chinese-open-source-llms-2025?utm_source=chatgpt.com "An Overview of Chinese Open-Source LLMs (Sept 2025)"
+[5]: "Model Licenses - Arena Help Center"
+, https://help.arena.ai/articles/4171906875-model_licenses?utm_source=chatgpt.com 
 
-[7]: https://www.simplilearn.com/open-source-llms-article?utm_source=chatgpt.com "Top Open Source LLMs (2026): Benchmarks and Licenses"
+[6]: "An Overview of Chinese Open-Source LLMs (Sept 2025)", https://intuitionlabs.ai/articles/chinese-open-source-llms-2025?utm_source=chatgpt.com 
+
+[7]: "Top Open Source LLMs (2026): Benchmarks and Licenses", https://www.simplilearn.com/open-source-llms-article?utm_source=chatgpt.com 
